@@ -1,0 +1,48 @@
+baseURL: https://kovacoj.github.io/
+locale: en-us
+# title: kovacoj
+theme:
+  - PaperMod
+
+enableRobotsTXT: true
+
+minify:
+  disableXML: true
+
+# menu:
+#   main:
+#     - name: Posts
+#       url: posts/
+#       weight: 10
+#     - name: About
+#       url: about/
+#       weight: 20
+
+params:
+  defaultTheme: light
+  disableThemeToggle: true
+  ShowReadingTime: true
+  ShowPostNavLinks: true
+  ShowBreadCrumbs: true
+  profileMode:
+    enabled: true
+    title: Ján Kovačovský
+    subtitle: Greetings Earthling! Welcome to my personal website.
+    buttons:
+    #   - name: About
+    #     url: about/
+    #   - name: Posts
+    #     url: posts/
+  socialIcons:
+    - name: github
+      url: https://github.com/kovacoj
+    - name: linkedin
+      url: https://www.linkedin.com/in/j%C3%A1n-kova%C4%8Dovsk%C3%BD-248196353/
+    - name: email
+      url: mailto:kovacoj1@gmail.com
+
+outputs:
+  home:
+    - HTML
+    - RSS
+    - JSON
