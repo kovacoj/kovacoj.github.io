@@ -9,17 +9,17 @@ enableRobotsTXT: true
 minify:
   disableXML: true
 
-# menu:
-#   main:
-#     - name: About
-#       url: about/
-#       weight: 10
-#     - name: Blog
-#       url: posts/
-#       weight: 20
-#     - name: Research
-#       url: research/
-#       weight: 30
+menu:
+  main:
+    - name: About
+      url: about/
+      weight: 10
+    - name: Blog
+      url: posts/
+      weight: 20
+    - name: Research
+      url: research/
+      weight: 30
 
 params:
   defaultTheme: light
