@@ -1,0 +1,178 @@
+.timeline {
+  --line: #c0c0c0;
+  --dot-border: #aaa;
+  --dot-fill: var(--theme);
+  --dot-fill-done: #aaa;
+  --muted: #666;
+  --spine: 112px;
+  position: relative;
+  margin: 28px 0 22px;
+  padding: 0 0 2px;
+}
+
+.timeline,
+.timeline * {
+  box-sizing: border-box;
+}
+
+.timeline::before {
+  content: "";
+  position: absolute;
+  left: calc(var(--spine) - 1.25px);
+  top: 11px;
+  bottom: 11px;
+  width: 2.5px;
+  background: var(--line);
+}
+
+.timeline-item {
+  position: relative;
+  display: grid;
+  grid-template-columns: 100px 40px 1fr;
+  column-gap: 16px;
+  padding: 0 0 30px;
+}
+
+.timeline-item:last-child {
+  padding-bottom: 0;
+}
+
+.timeline-item .timespan {
+  color: var(--muted);
+  font-size: 15px;
+  font-variant-numeric: tabular-nums;
+  line-height: 1.25;
+  text-align: right;
+  padding-top: 2px;
+  white-space: pre-line;
+}
+
+.timeline-item .ico {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+
+.timeline-item .entry-dot {
+  width: 14px;
+  height: 14px;
+  border-radius: 999px;
+  border: 2.5px solid var(--dot-border);
+  background: var(--dot-fill);
+  position: relative;
+  left: calc(var(--spine) - 100px - 16px - 20px);
+  z-index: 1;
+  flex-shrink: 0;
+}
+
+.timeline-item.finished .entry-dot {
+  background: var(--dot-fill-done);
+}
+
+.timeline-item .thumb {
+  margin-top: 10px;
+  background: #fff;
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.timeline-item .thumb--square {
+  width: 52px;
+  height: 52px;
+}
+
+.timeline-item .thumb--wide {
+  width: 58px;
+  height: 40px;
+}
+
+.timeline-item .thumb img {
+  display: block !important;
+  width: 100% !important;
+  height: 100% !important;
+  max-width: 100% !important;
+  max-height: 100% !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  border-radius: 0 !important;
+  object-fit: contain !important;
+  object-position: center !important;
+}
+
+.timeline-item .thumb img.charles-logo {
+  object-position: 50% 42% !important;
+}
+
+.timeline-item .thumb img.fykos-logo {
+  object-fit: cover !important;
+  object-position: center !important;
+}
+
+.timeline-item .desc {
+  min-width: 0;
+}
+
+.timeline-item .desc p {
+  margin: 0 0 10px;
+}
+
+.timeline-item .desc p:last-child {
+  margin-bottom: 0;
+}
+
+.timeline-item .event-title {
+  font-weight: 700;
+}
+
+.timeline-item .meta {
+  color: var(--muted);
+  font-size: 15px;
+}
+
+@media (max-width: 620px) {
+  .timeline {
+    --spine: 22px;
+  }
+
+  .timeline-item {
+    grid-template-columns: 48px 1fr;
+    column-gap: 14px;
+    row-gap: 2px;
+    padding-bottom: 26px;
+  }
+
+  .timeline-item .timespan {
+    grid-column: 2;
+    text-align: left;
+    padding-top: 0;
+  }
+
+  .timeline-item .ico {
+    grid-column: 1;
+    grid-row: 1 / span 2;
+    width: 48px;
+  }
+
+  .timeline-item .entry-dot {
+    left: calc(var(--spine) - 24px);
+  }
+
+  .timeline-item .thumb--square {
+    width: 44px;
+    height: 44px;
+  }
+
+  .timeline-item .thumb--wide {
+    width: 50px;
+    height: 34px;
+  }
+
+  .timeline-item .desc {
+    grid-column: 2;
+  }
+}

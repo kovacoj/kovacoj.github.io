@@ -1,6 +1,6 @@
 baseURL: https://kovacoj.github.io/
 locale: en-us
-# title: kovacoj
+# title: Ján Kovačovský
 theme:
   - PaperMod
 
@@ -11,12 +11,15 @@ minify:
 
 # menu:
 #   main:
-#     - name: Posts
-#       url: posts/
-#       weight: 10
 #     - name: About
 #       url: about/
+#       weight: 10
+#     - name: Blog
+#       url: posts/
 #       weight: 20
+#     - name: Research
+#       url: research/
+#       weight: 30
 
 params:
   defaultTheme: light
@@ -24,15 +27,8 @@ params:
   ShowReadingTime: true
   ShowPostNavLinks: true
   ShowBreadCrumbs: true
-  profileMode:
-    enabled: true
-    title: Ján Kovačovský
-    subtitle: Greetings Earthling! Welcome to my personal website.
-    buttons:
-    #   - name: About
-    #     url: about/
-    #   - name: Posts
-    #     url: posts/
+  homeTitle: Ján Kovačovský
+  homeSubtitle: Greetings Earthling! Welcome to my personal website.
   socialIcons:
     - name: github
       url: https://github.com/kovacoj
@@ -46,3 +42,8 @@ outputs:
     - HTML
     - RSS
     - JSON
+
+markup:
+  goldmark:
+    renderer:
+      unsafe: true

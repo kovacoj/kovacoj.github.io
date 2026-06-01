@@ -1,0 +1,18 @@
+{{- define "main" }}
+<link rel="stylesheet" href="/css/home.css">
+<link rel="stylesheet" href="/css/timeline.css">
+
+<div class="home-wrap">
+  <header class="home-header">
+    <h1>{{ site.Params.homeTitle }}</h1>
+    <p>{{ site.Params.homeSubtitle }}</p>
+    <div class="home-links">
+      {{ partial "social_icons.html" (dict "align" "center") }}
+    </div>
+  </header>
+
+  <div class="home-content">
+    {{ .Content }}
+  </div>
+</div>
+{{- end }}
