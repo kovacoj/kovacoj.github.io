@@ -27,7 +27,7 @@ title = 'Home'
       </div>
     </div>
     <div class="desc">
-      <p> I help organize physics competitions and educational events for high school students.</p>
+      <p><span class="event-title">Organizer.</span> We organize physics competitions and educational events for high school students.</p>
       <p class="meta">FYKOS · Internship · Prague · Hybrid</p>
     </div>
   </article>
