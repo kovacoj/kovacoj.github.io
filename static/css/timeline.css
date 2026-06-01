@@ -55,10 +55,10 @@
 }
 
 .timeline-item .entry-dot {
-  width: 14px;
-  height: 14px;
+  width: 12px;
+  height: 12px;
   border-radius: 999px;
-  border: 2.5px solid var(--dot-border);
+  border: 2px solid var(--dot-border);
   background: var(--dot-fill);
   position: relative;
   left: calc(var(--spine) - 100px - 16px - 20px);
