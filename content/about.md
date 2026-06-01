@@ -2,22 +2,10 @@
 title = 'About'
 +++
 
-This site is a minimal home for writing, projects, and links.
+I'm Ján Kovačovský. I hold a Bachelor's degree in Physics and am currently pursuing a Master's in Mathematical Modelling with a focus on numerical mathematics.
 
-I'm kovacoj.
+My interests lie at the intersection of machine learning, data science, and numerical computation, particularly in understanding the mathematical and algorithmic foundations behind modern ML systems.
 
-Right now this site starts simple on purpose:
+Rather than treating machine learning models as black boxes, I am interested in the algorithms and numerical methods that make them work efficiently at scale. My work and studies focus on the computational aspects of ML systems and the design of efficient algorithms for large-scale problems.
 
-- one clean homepage
-- a small posts section
-- a place to share my background and current work
-
-## What you'll find here
-
-- short notes
-- project updates
-- links and background over time
-
-## Current focus
-
-This site is built with Hugo and a minimal theme, so it stays fast, easy to host on GitHub Pages, and easy to edit in plain Markdown.
+In numerical mathematics, I am particularly interested in randomized algorithms and mixed-precision arithmetic, especially in contexts where they can improve performance, stability, and scalability of modern machine learning and scientific computing workflows.

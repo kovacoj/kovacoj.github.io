@@ -14,7 +14,7 @@ title = 'Home'
       </div>
     </div>
     <div class="desc">
-      <p><span class="event-title">Machine Learning Engineer.</span> Developed tailored ML/AI solutions for international clients, with a focus on large language model (LLM) systems and data science initiatives.</p>
+      <p><span class="event-title">Machine Learning Engineer.</span> Develop tailored ML/AI solutions with recent focus on LLM-based systems. Support data science projects mainly through backend development and infrastructure for scalable data and model pipelines.</p>
       <p class="meta">Siemens · Internship · Prague · Hybrid</p>
     </div>
   </article>
@@ -27,7 +27,7 @@ title = 'Home'
       </div>
     </div>
     <div class="desc">
-      <p><span class="event-title">Professional Organizer.</span> Organized physics competitions and educational events for high school students. Managed planning, logistics, and on-site operations.</p>
+      <p> I help organize physics competitions and educational events for high school students.</p>
       <p class="meta">FYKOS · Internship · Prague · Hybrid</p>
     </div>
   </article>
